@@ -42,7 +42,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#test">Test</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#test">Try it Out</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#source">Source</a>
@@ -65,17 +65,14 @@
     <!-- Portfolio Grid Section -->
     <section class="about" id="about">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">About</h2>
+        <h2 class="text-center text-uppercase text-secondary mb-0">Securing Content Delivery</h2>
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-md-12 col-lg-12">
             
-Token-Based Authentication safeguards against hotlinking by adding a token requirement to requests for content secured by it. This token, which must be defined in the request URL's query string, defines the criteria that must be met before the requested content may be served via the CDN. This repository contains the following token generation resources:
+Token-Based Authentication safeguards against hotlinking by adding a token requirement to requests for content secured by it. This token, which must be defined in the request URL's query string, defines the criteria that must be met before the requested content may be served via the CDN.
 <Br/><Br/>
-<ul>
-<li><a href="https://github.com/VerizonDigital/ectoken/releases/latest">Linux binaries and Windows executable</a></li>
 
-</ul>
           </div>
           </div>
       </div>
@@ -84,17 +81,17 @@ Token-Based Authentication safeguards against hotlinking by adding a token requi
     <!-- About Section -->
     <section class="bg-primary text-white mb-0" id="test">
       <div class="container">
-        <h2 class="text-center text-uppercase text-white">Test</h2>
+        <h2 class="text-center text-uppercase text-white">Try it Out</h2>
         <hr class="star-light mb-5">
         <div class="row">
           <div class="col-lg-12 ml-auto">
              
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Key</label>
+                    <label for="exampleInputEmail1">Encryption Key</label>
                     <input type="text" class="form-control" id="key" aria-describedby="emailHelp" placeholder="key">
                    </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Token</label>
+                    <label for="exampleInputPassword1">Value</label>
                     <input type="text" class="form-control" id="token" placeholder="token">
                   </div>
                   <div class="form-check">
@@ -108,8 +105,8 @@ Token-Based Authentication safeguards against hotlinking by adding a token requi
                         </div>
                           <Br/><Br/>
                   </div>
-                  <button type="button" class="btn" id="encrypt">Encrypt</button>
-    
+                  <button type="button" class="btn" id="encrypt">Let's do this!</button>
+                  
                 <div id="result" style="margin-top:20px;font-size:20pt">
                  </div>
              </div>
@@ -152,8 +149,15 @@ Token-Based Authentication safeguards against hotlinking by adding a token requi
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <ul>
-              <li> <a href='https://github.com/hattan/ectoken-csharp'>C#</a></li>
-              <li>  <a href='https://github.com/hattan/ectoken-nodejs'>Node JS</a></li>
+              <li>  <a href='https://github.com/hattan/ectoken-nodejs'>Node JS</a></li>                      
+              <li><a href="https://github.com/VerizonDigital/ectoken/tree/master/c%2B%2B-ectoken">C++</a></li>
+              <li><a href="https://github.com/VerizonDigital/ectoken/tree/master/c-ectoken/ecencrypt">C</a></li>
+              <li> <a href='https://github.com/hattan/ectoken-csharp'>C#</a></li>      
+              <li><a href="https://github.com/VerizonDigital/ectoken/tree/master/java-ectoken">Java</a></li>
+              <li><a href="https://github.com/VerizonDigital/ectoken/tree/master/perl-ectoken">Perl</a></li>
+              <li><a href="https://github.com/VerizonDigital/ectoken/tree/master/php-ectoken">Php</a></li>
+              <li><a href="https://github.com/VerizonDigital/ectoken/tree/master/python-ectoken">Python</a></li>
+
             </ul>
            
           
