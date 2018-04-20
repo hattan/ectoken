@@ -1,54 +1,203 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/fv1xfec09184lpt4?svg=true)](https://ci.appveyor.com/project/HattanShobokshi/ectoken)
+<!DOCTYPE html>
+<html lang="en">
 
-![Verizon Digital Media Services](https://images.verizondigitalmedia.com/2016/03/vdms-30.png)
+  <head>
 
-# Token Generator for Edgecast Token-Based Authentication
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>EC Token</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">EC Token</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#test">Test</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#source">Source</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="https://camo.githubusercontent.com/4d026a9bcd65c6e684755318980bdba00985a768/68747470733a2f2f696d616765732e766572697a6f6e6469676974616c6d656469612e636f6d2f323031362f30332f76646d732d33302e706e67" alt="">
+      <h1 class="text-uppercase mb-0">Token Generator</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Edgecast Token-Based Authentication</h2>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">About</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            
 Token-Based Authentication safeguards against hotlinking by adding a token requirement to requests for content secured by it. This token, which must be defined in the request URL's query string, defines the criteria that must be met before the requested content may be served via the CDN. This repository contains the following token generation resources:
-- [Linux binaries and Windows executable](https://github.com/VerizonDigital/ectoken/releases/latest)
-- Source code for various languages (e.g., [C#](c%23-ectoken/.), [Python](python-ectoken/.), [PHP](php-ectoken/.), etc.)
+<Br/><Br/>
+<ul>
+<li><a href="https://github.com/VerizonDigital/ectoken/releases/latest">Linux binaries and Windows executable</a></li>
 
-## Quick Start
+</ul>
+          </div>
+          </div>
+      </div>
+    </section>
 
-1. Leverage this token generator by either:
-   - Downloading a Linux binary and/or Windows executable.
-   - Cloning this repository and then incorporating the source code for the desired language in your application.
-2. Create a script to generate tokens for your content.
-3. Either update your static links or dynamically generate links that include a query string set to a token that defines the requirements that must be met before that content may be served.
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="test">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Test</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-12 ml-auto">
+             
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Key</label>
+                    <input type="text" class="form-control" id="key" aria-describedby="emailHelp" placeholder="key">
+                   </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Token</label>
+                    <input type="text" class="form-control" id="token" placeholder="token">
+                  </div>
+                  <div class="form-check">
+                      <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" checked id="encryptRadio" value="true">
+                          <label class="form-check-label" for="inlineRadio1">Encrypt</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="decrytRadio" value="true">
+                          <label class="form-check-label" for="inlineRadio2">Decrypt</label>
+                        </div>
+                          <Br/><Br/>
+                  </div>
+                  <button type="button" class="btn" id="encrypt">Encrypt</button>
+    
+                <div id="result" style="margin-top:20px;font-size:20pt">
+                 </div>
+             </div>
+              <script>
+                var btn = document.getElementById("encrypt");
+                var key = document.getElementById("key");
+                var token = document.getElementById("token");
+                var encryptRadio = document.getElementById("encryptRadio");
+                var decrytRadio = document.getElementById("decrytRadio");
+                var result = document.getElementById("result");
+                document.addEventListener("DOMContentLoaded", function(){
+                  btn.addEventListener("click", function(){
+                    var mode = encryptRadio.checked ? "encrypt" : null;
+                    mode = decrytRadio.checked ? "decrypt" : "encrypt";
+                    if(mode!=null){
+                      var keyParam = key.value;
+                      var tokParam = token.value;
+                      fetch('https://j5la247xti.execute-api.us-west-2.amazonaws.com/Prod?Key=' + keyParam + '&Token=' + tokParam + '&mode=' + mode)
+                      .then(function(response) {
+                        return response.text();
+                      })
+                      .then(function(value){
+                        result.innerHTML = value;
+                      });
+                    }
+                    
+                  });
+                });
+              </script>
+        </div>
+     
+      </div>
+    </section>
 
-## Usage
+    <!-- Contact Section -->
+    <section id="source">
+      <div class="source">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Source Code</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <ul>
+              <li> <a href='https://github.com/hattan/ectoken-csharp'>C#</a></li>
+              <li>  <a href='https://github.com/hattan/ectoken-nodejs'>Node JS</a></li>
+            </ul>
+           
+          
+          </div>
+        </div>
+      </div>
+    </section>
 
-Use the following syntax to specify a single parameter:
+    <!-- Footer -->
 
-`ectoken3 <KeyName> "<Parameter>=<Value>"`
+    <footer>
+      
+      </footer>
 
-Use the following syntax to specify multiple parameters:
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small> 2018</small>
+      </div>
+    </div>
 
-`ectoken3 <KeyName> "<Parameter1>=<Value>&<Parameter2>=<Value1>,<Value2>"`
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
 
-## Key information:
 
-* An encryption key may consist of any combination of alphanumeric characters. All other characters, including spaces, are not valid for encryption keys.
-* An encryption key is case-sensitive. In other words, the case of an encryption key affects the encryption and decryption of token values.
-* The maximum length of an encryption key is 250 characters.
 
-<div>
-Test:
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-Key: <input type="text" name="Key" id="Key"/>
-Token: <input type="text" name="Token" id="Token"/>
-<button>Encrypt</button><button>Decrypt</button>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-</div>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-## Contributing
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
 
-Contributions are welcome! Please review our [contribution guidelines](CONTRIBUTING.md).
+  </body>
 
-## More Information
-
-Please refer to the CDN Help Center, which is available from within the MCC, for more information (e.g., parameter names and usage).
-
-## License
-
-[View legal and licensing information.](LICENSE.txt)
+</html>
