@@ -1,0 +1,3 @@
+[submodule "nodejs-ectoken"]
+	path = nodejs-ectoken
+	url = https://github.com/hattan/ectoken-nodejs
