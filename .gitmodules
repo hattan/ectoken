@@ -1,3 +1,6 @@
 [submodule "nodejs-ectoken"]
 	path = nodejs-ectoken
 	url = https://github.com/hattan/ectoken-nodejs
+[submodule "c#-ectoken"]
+	path = "c#-ectoken"
+	url = https://github.com/hattan/ectoken-csharp
