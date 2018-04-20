@@ -26,6 +26,21 @@ Use the following syntax to specify multiple parameters:
 
 `ectoken3 <KeyName> "<Parameter1>=<Value>&<Parameter2>=<Value1>,<Value2>"`
 
+## Key information:
+
+* An encryption key may consist of any combination of alphanumeric characters. All other characters, including spaces, are not valid for encryption keys.
+* An encryption key is case-sensitive. In other words, the case of an encryption key affects the encryption and decryption of token values.
+* The maximum length of an encryption key is 250 characters.
+
+<div>
+Test:
+
+Key: <input type="text" name="Key" id="Key"/>
+Token: <input type="text" name="Token" id="Token"/>
+<button>Encrypt</button><button>Decrypt</button>
+
+</div>
+
 ## Contributing
 
 Contributions are welcome! Please review our [contribution guidelines](CONTRIBUTING.md).
